@@ -55,7 +55,7 @@ class AudioNormalizerGUI:
             for f in os.listdir(self.dir_path):
                 if f.endswith(Supported):
                     Files.append(os.path.join(self.dir_path, f))
-            tk.messagebox.showinfo("Bruh", Files)
+            #tk.messagebox.showinfo("Bruh", Files)
             process_files(Files, float(self.db_value.get()))
 
             tk.messagebox.showinfo(
